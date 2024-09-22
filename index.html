@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Присоединяйтесь к нашему серверу Discord и станьте частью удивительного сообщества!">
+    <meta property="og:title" content="Присоединяйтесь к нашему серверу Discord">
+    <meta property="og:description" content="Станьте частью нашего удивительного сообщества на Discord!">
+    <meta property="og:image" content="path/to/image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Сервер Discord</title>
+    <!-- Подключение файла стилей -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="animated-background"></div>
+    
+    <div class="container" role="main">
+        <h1>Присоединяйтесь к нашим серверам Discord</h1>
+        <p>Станьте частью нашего удивительного сообщества. Прокрутите вниз, чтобы увидеть оба сервера и присоединиться!</p>
+        
+        <div class="scroll-button" onclick="scrollToWidget()" aria-label="Прокрутить к виджетам Discord">▼</div>
+        
+        <!-- Контейнер с двумя виджетами Discord и кнопками -->
+        <div class="discord-widgets-container" id="discord-widgets">
+            <!-- Первый виджет Discord -->
+            <iframe src="https://discord.com/widget?id=1122125723805679636&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="Виджет Discord 1"></iframe>
+
+            <!-- Второй виджет Discord -->
+            <iframe src="https://discord.com/widget?id=1286712503266447410&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="Виджет Discord 2"></iframe>
+        </div>
+
+        <!-- Кнопки под виджетами -->
+        <div class="buttons-container">
+            <!-- Кнопка для первого сервера -->
+            <button class="join-button" onclick="redirectToDiscordFirst()" aria-label="Присоединиться к первому серверу">Присоединиться к первому серверу</button>
+            
+            <!-- Кнопка для второго сервера -->
+            <button class="join-button" onclick="redirectToDiscordSecond()" aria-label="Присоединиться ко второму серверу">Присоединиться ко второму серверу</button>
+        </div>
+    </div>
+
+    <!-- Подключение JavaScript файла -->
+    <script src="scripts.js"></script>
+</body>
+</html>
